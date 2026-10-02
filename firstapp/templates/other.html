@@ -1,0 +1,12 @@
+{%extends "base.html"%}
+{%block title%}other{%endblock%}
+
+{%block content%}
+<h1>Hello World</h1>
+<p>{{pet | upper}}= this is applying upper filter</p>
+<p> {{pet | reverse_string}}</p>
+<p>{{pet|repeat}}</p>
+<p>{{pet|repeat(5)}}</p>
+<p>{{pet|alternate_case}}</p>
+
+{%endblock%}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+</head>
+<body>
+
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph of text.</p>
+    <p>I am {{name | upper}} and my age is {{age }}</p>
+    <p>I am {{name | reverse}} and my age is {{age }}</p>
+    <ul>
+            {% for item in cars %}
+            {% if item%2==1 %}
+            <li style="color:red">{{item}}</li>
+            {%else%}
+            <li style="color:orange">{{item}}</li>
+        {%endif%}
+        {%endfor%}
+    </ul>
+</body>
+<a href="{{url_for('other4')}}">other</a>
+</html>

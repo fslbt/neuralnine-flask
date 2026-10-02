@@ -1,0 +1,23 @@
+{%extends "base4.html"%}
+{%block title%}other{%endblock%}
+
+{%block content%}
+<h1>Hello World</h1>
+<p>{{cat | upper}}= this is applying upper filter</p>
+<p> {{cat | reverse_string}}</p>
+<img src="/img/cat.jpeg" />
+<p class="special"> hello this is css using flask </p>
+<!-- <script src="/js/hello.js"></script> -->
+<p>{{message}}</p>
+
+<a href="{{url_for('set_data')}}">Set Session Data</a>
+<a href="{{url_for('get_data')}}">Get Session Data</a>
+<a href="{{url_for('clear_session')}}"> Session Cleared</a>
+<a href="{{url_for('set_cookie')}}"> Cookie Set</a>
+<a href="{{url_for('get_cookie')}}"> Cookie Get</a>
+<a href="{{url_for('remove_cookie')}}"> Cookie Remove</a>
+
+
+
+
+{%endblock%}
